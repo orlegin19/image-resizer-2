@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login || Image Resizer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div id="main">
+      <form action="#">
+        <header>Login here</header>
+        <br>
+      <label><i id="user" class='bx bx-user'></i> Email</label>
+      <input id="email1" type="email" placeholder="Email" required></input>
+      <br><br>
+      <label><i id="key" class='bx bx-key'></i> Password</label>
+      <input id="password1" type="password" placeholder="Password" class="password" required></input>
+      <center><button class="submit" onclick="login()">Login</button></center>
+      <hr>
+      <center><p>Don't have an account? <span id="sign-up" style="color: red">Sign Up</span></p></center>
+    </div>
+  </form>
+    <div id="create-acct">
+      <form action="#">
+        <header>Create an Account</header>
+      <br><br>
+      <input id="full_name" placeholder="Full Name" class="password" required></input>
+      <br><br>
+      <input id="email" type ="email" placeholder ="Email" autocomplete="off"></input>
+      <br><br>
+      <input id="password" type="password" placeholder="Password" required></input>
+      <br><br>
+      <center><button id="create-acct-btn" onclick="register()">sign up</button></center>
+      <hr>
+      <center><p>Already have an account? <span id="return-btn" style="color: red">Login</span></p></center>
+    </div>
+    </div>
+  </form>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Our script must be loaded after firebase references -->
+<script src="js/login.js"></script>
+</body>
+</html>

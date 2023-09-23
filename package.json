@@ -1,0 +1,20 @@
+{
+  "name": "image-resizer",
+  "version": "1.0.0",
+  "description": "Image Resizer",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Orlegin Layese",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^26.2.1",
+    "firebase": "^10.3.1",
+    "resize-img": "^2.0.0",
+    "sharp": "^0.32.5",
+    "sweetalert2": "^11.7.28",
+    "toastify-js": "^1.12.0"
+  }
+}
